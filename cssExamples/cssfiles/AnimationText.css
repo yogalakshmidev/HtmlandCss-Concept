@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background: #000;
+}
+.container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container span {
+  text-transform: uppercase;
+  display: block;
+}
+.text2 {
+  color: rgb(178, 44, 66);
+}
+.text1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  animation: animate 3s 1;
+  position: relative;
+  background: black;
+}
+.text2 {
+  color: rgb(33, 147, 33);
+  font-size: 25px;
+}
+@keyframes animate {
+  0% {
+    color: #000;
+    margin-bottom: -40px;
+  }
+  30% {
+    margin-bottom: -40px;
+    letter-spacing: 30px;
+  }
+  70% {
+    margin-bottom: -40px;
+    letter-spacing: 10px;
+  }
+}

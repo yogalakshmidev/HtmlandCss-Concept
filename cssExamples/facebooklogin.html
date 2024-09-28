@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook sample form</title>
+    <link rel="icon" href="images/fb-login.png" />
+    <link rel="stylesheet" href="cssfiles/facebook.css" class="rel" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="fbtext">
+        <div class="text">
+          <h1>Facebook</h1>
+          <p>Connects with the friends and world</p>
+          <p>around you on Facebook</p>
+        </div>
+        <form action="#">
+          <label for="accno" class="label-required"
+          >A/C No:<span class="required">*</span></label
+        >
+        <input type="number" name="accno" id="accno" value="accno" placeholder="Enter Account Number" required />
+        <br />
+        <br />
+          <input
+            type="email"
+            id="name"
+            placeholder="abc@gmail.com"
+            required
+          /><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            required
+          /><br />
+          <div class="login-link">
+            <button  type="submit" class="login-btn">Login</button>
+            <!-- <input type="submit" id="login1" value="Login" class="login-btn" /><br /> -->
+            <a href="#" class="forgotPassword">Forgot Password</a>
+          </div>
+          <hr />
+          <div class="createAccount">
+            <button id="signup">Create New Account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

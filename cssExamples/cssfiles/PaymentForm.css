@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+body {
+  font-family: sans-serif;
+}
+.appContainer {
+  height: 650px;
+  width: 350px;
+  background-image: linear-gradient(#5c0eb0, #20c34c);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.top-box {
+  height: 150px;
+  background-color: #5c0eb0;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+.top-box p {
+  padding: 20px 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.right-icon {
+  float: right;
+  margin-right: 30px;
+}
+.left-icon {
+  float: left;
+  margin-left: 30px;
+}
+.middle-box {
+  height: 100px;
+  background-image: linear-gradient(#4fd61e, #24b00e, #0eb075);
+  margin:-70px 50px 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.middle-box h1{
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.middle-box h1 span{
+  font-size: 16px;
+  position: relative;
+  bottom: 18px;
+  margin-left: 5px;
+}
+
+.paymentBtn{
+  padding: 20px;  
+  margin: 5px 30px;
+  background-color: #00bb92;
+  height: 30px;
+  width: 290px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.card-details{
+  background: #fff;
+  /* color: #555; */
+  margin:10px 30px;
+  padding:10px;
+
+}
+.card-details p{
+  font-size: 18px;
+  color:black
+}
+.card-details label{
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+}
+.card-num-field{
+  margin-top: 10px;
+}
+
+.date-num-field{
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.cvv-num-field{
+  /* margin-top: 10px; */
+  float: right;
+  padding-right: 10px;
+  
+  display: inline-block;
+}
+
+.name-det-field{
+  margin-top: 10px;
+}
+
+.name-det{
+  width: 270px;
+  position: relative;
+}
+.date-num{
+  width: 80px;
+}
+.cvv-num{
+  width: 50px;
+  
+  margin-bottom: 10px;
+}
+.card-details input{
+  border: 1px solid #ccc;
+  height: 22px;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.card-details input::placeholder{
+  color: #ccc;
+}
+
+.pay-btn{
+  width: 250px;
+  margin: 10px;
+  background-color: #4fd61e;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

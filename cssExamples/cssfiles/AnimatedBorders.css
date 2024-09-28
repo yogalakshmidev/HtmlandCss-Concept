@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body {
+  background: rgb(59, 58, 58);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.cart {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  background: rgb(104, 102, 102);
+  padding: 20px;
+  font-size: medium;
+  border-radius: 10px;
+}
+
+.cart::after,
+.cart::before {
+  content: "";
+  padding: 3px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: -1;
+  background: conic-gradient(from var(--angle), transparent 70%, gold);
+  /* background: gold; */
+  animation: spin 3s linear infinite forwards;
+}
+
+.cart::before {
+  filter: blur(25px);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* to achieve animated borders use pseudo elements
+for before and after 
+after: same property as the cart with z index -1 and also chose
+other background color
+
+before: choose filter and opacity
+
+then use @keyframes for animate functions
+
+
+conic gradient allows us for the smooth animation 
+
+we can also use other animation
+@ property --angle 
+
+*/

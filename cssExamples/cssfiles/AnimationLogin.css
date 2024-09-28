@@ -1,0 +1,172 @@
+* {
+  margin: 0.5%;
+  padding: 0.9%;
+  font-family: "poppins", sans-serif;
+  /* color: #fff; */
+  font-variant: small-caps;
+  font-weight: bolder;
+  font-style: italic;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: #23242a;
+}
+.box {
+  position: relative;
+  width: 380px;
+  height: 420px;
+  background: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  z-index: 1;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #a63535,
+    #270a49,
+    #16b049
+  );
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  z-index: 1;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #cfc5c5,
+    #958ba1,
+    #e1e4e2
+  );
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+.borderline {
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+.borderline::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  z-index: 1;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #0479c1,
+    #b8136b,
+    #16b049
+  );
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+.borderline::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  z-index: 1;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #17b2af,
+    #950753,
+    #4b6d57
+  );
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -4.5s;
+}
+.box form {
+  position: absolute;
+  inset: 4;
+  background: #222;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  border-radius: 8px;
+}
+.box form .inputbox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+
+.box form .inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 1;
+  border: none;
+}
+.box form .inputbox span {
+  position: relative;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+/* .box form .inputbox input:valid-span,
+.box form .inputbox input:focus-span{
+  color:#fff;
+  font-size: 0.76em;
+  transform: translateY(-34px);
+} */
+.box form .links {
+  display: flex;
+  justify-content: space-between;
+}

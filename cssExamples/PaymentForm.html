@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Sample Form</title>
+    <link rel="stylesheet" href="cssfiles/PaymentForm.css" class="rel" />
+  </head>
+  <body>
+    <div class="appContainer">
+      <div class="top-box">
+        <p>
+          <span class="left-icon">&#8592;</span>
+          Checkout
+          <span class="right-icon">&#x2022;&#x2022;&#x2022;</span>
+        </p>
+      </div>
+      <div class="middle-box">
+        <h1>1599<span>$</span></h1>
+        <p>Payment to xyz Company Ltd</p>
+      </div>
+      <div class="bottom-box">
+        <button type="button" class="paymentBtn">Payment using PayPal</button>
+        <button type="button" class="paymentBtn">
+          Payment using Google Pay
+        </button>
+      </div>
+      <div class="card-details">
+        <p>Pay Using Credit or Debit Card</p>
+        <div class="card-num-field">
+          <label>Card Number :</label><br />
+          <input
+            type="text"
+            class="card-num"
+            placeholder="xxxx-xxxx-xxxx-xxxx"
+          />
+        </div>
+
+        <div class="date-num-field">
+          <label>Expired Date :</label><br />
+          <input type="text" class="date-num" placeholder="mm" />
+          <input type="text" class="date-num" placeholder="yyyy" />
+          <div class="cvv-num-field">
+            <label>CVC :</label><br />
+            <input type="password" class="cvv-num" placeholder="xxx" />
+          </div>
+          <div class="name-det-field">
+            <label>Card Holder Name :</label><br />
+            <input type="password" class="name-det" placeholder="Full Name" />
+          </div>
+        </div>
+        <button type="button" class="pay-btn">Pay Now</button>
+        
+      </div>
+  
+    </div>
+  
+  </body>
+</html>
+<!-- -->

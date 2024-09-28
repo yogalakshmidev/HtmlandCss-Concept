@@ -1,0 +1,54 @@
+.item {
+  background-color: blueviolet;
+  color: white;
+  font-size: 2rem;
+  border: 2px solid tomato;
+  flex: 1;
+  /* justify-content:center; */
+}
+.flexbox {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  background-color: tomato;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.item1 {
+  flex: 3;
+  /* align-self: flex-end; */
+}
+.item5 {
+  flex: 5;
+  /* align-self: flex-start; */
+}
+
+/*------------- nav bar styles --------------------------------------------*/
+.navbar {
+  background-color: blueviolet;
+  height: 10vh;
+  color: #fff;
+  display: flex;
+  /* flex: 2; */
+}
+
+.logo {
+  display: flex;
+  font-size: 1.1rem;
+  align-items: center;
+  flex: 2;
+  margin: 0px 20px;
+}
+.menu {
+  display: flex;
+  flex: 4;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu-item {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.menu-item:hover {
+  color: tomato;
+}
