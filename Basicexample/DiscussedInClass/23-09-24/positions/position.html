@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 50px;
+        height: 1000px;
+      }
+
+      .div-common {
+        height: 100px;
+        width: 100px;
+      }
+      .bg-color-yellow {
+        background-color: yellow;
+      }
+      .bg-color-red {
+        background-color: red;
+      }
+      .bg-color-green {
+        background-color: green;
+      }
+      .bg-color-blue {
+        background-color: blue;
+      }
+
+      .pos-static {
+        position: static;
+        /* Below two props has no effect */
+        top: 100px;
+        left: 100px;
+      }
+
+      .pos-relative {
+        position: relative;
+        top: 100px;
+        left: 100px;
+        /* bottom: 100px;
+        right: 100px; */
+      }
+
+      .pos-absolute {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+      }
+
+      .pos-fixed {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+      }
+
+      .pos-sticky {
+        position: sticky;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="div-common bg-color-yellow pos-static"></div> -->
+
+    <!-- <div class="div-common bg-color-yellow pos-relative"></div> -->
+    <div class="div-common bg-color-blue pos-static"></div>
+    <div class="div-common bg-color-yellow pos-relative"></div>
+    <div style="margin: 50px">
+      <div class="div-common bg-color-blue pos-static"></div>
+      <div class="div-common bg-color-yellow pos-relative"></div>
+    </div>
+    <div class="div-common bg-color-yellow pos-absolute"></div>
+    <div style="margin: 50px; position: relative">
+      <div class="div-common bg-color-yellow pos-absolute"></div>
+    </div>
+    <div class="div-common bg-color-green pos-fixed"></div>
+    <div style="margin: 50px; position: relative">
+      <div class="div-common bg-color-blue pos-fixed"></div>
+    </div>
+    <div class="div-common bg-color-green pos-sticky"></div>
+  </body>
+</html>

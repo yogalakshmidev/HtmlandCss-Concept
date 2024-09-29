@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 1000px;
+      }
+
+      .div-common {
+        height: 100px;
+        width: 100px;
+      }
+      .bg-color-yellow {
+        background-color: yellow;
+      }
+      .bg-color-red {
+        background-color: red;
+      }
+      .bg-color-green {
+        background-color: green;
+      }
+      .bg-color-blue {
+        background-color: blue;
+      }
+
+      .pos-static {
+        position: static;
+        /* Below two props has no effect */
+        top: 100px;
+        left: 100px;
+      }
+
+      .pos-relative {
+        position: relative;
+        top: 100px;
+        left: 100px;
+        /* bottom: 100px;
+        right: 100px; */
+      }
+
+      .pos-absolute {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+      }
+
+      .pos-fixed {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+      }
+
+      .pos-sticky {
+        position: sticky;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="div-common bg-color-yellow pos-absolute"
+      style="z-index: 4"
+    ></div>
+    <div class="div-common bg-color-red pos-absolute" style="z-index: 3"></div>
+    <div
+      class="div-common bg-color-green pos-absolute"
+      style="z-index: 2"
+    ></div>
+    <div class="div-common bg-color-blue pos-absolute" style="z-index: 1"></div>
+    <span>Hello World</span>
+    <!-- <div
+      style="width: 300px; height: 300px; border: 1px solid; position: relative"
+    >
+      <div class="div-common bg-color-yellow pos-fixed"></div>
+    </div> -->
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <!-- <div class="div-common bg-color-yellow pos-sticky"></div> -->
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+      .bg-black {
+        background-color: black;
+        color: white;
+      }
+      .div-common {
+        /*      t/b  l/r   */
+        margin: 12px 0px;
+        height: 25px;
+      }
+      .div-common-width {
+        display: inline-block;
+        width: 25px;
+        margin: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="height: 1px; width: 1px; background-color: black"></div>
+    <p style="font-size: 3px">FSD-WE-T-B7</p>
+    <h1>absolute units</h1>
+    <div class="bg-black div-common" style="width: 50px">50px</div>
+    <div class="bg-black div-common" style="width: 50pt">50pt</div>
+    <div class="bg-black div-common" style="width: 50pc">50pc</div>
+    <div class="bg-black div-common-width" style="height: 25px">25px</div>
+    <div class="bg-black div-common-width" style="height: 25pt">25pt</div>
+    <div class="bg-black div-common-width" style="height: 25pc">25pc</div>
+
+    <h1>Relative units</h1>
+    <h2>Percentage %</h2>
+    <div class="bg-black div-common" style="width: 50%">50%</div>
+    <div style="border: 1px solid; width: 500px">
+      <div class="bg-black div-common" style="width: 50%">50%</div>
+    </div>
+
+    <h2>Viewport Width - vw</h2>
+    <div class="bg-black div-common" style="width: 50vw">50vw</div>
+    <div class="bg-black div-common" style="width: 100vw">100vw</div>
+
+    <h2>Viewport Height - vh</h2>
+    <div class="bg-black div-common-width" style="height: 50vh">50vh</div>
+    <div class="bg-black div-common-width" style="height: 100vh">100vh</div>
+
+    <h2>emphemeral units (font-size) default font-size - 16px</h2>
+
+    <div>FSD-WE-T-B7</div>
+
+    <h2>em</h2>
+    <div style="font-size: 0.5em">FSD-WE-T-B7</div>
+    <div style="font-size: 24px">FSD-WE-T-B7</div>
+    <div style="font-size: 24px">
+      <div style="font-size: 0.5em">FSD-WE-T-B7</div>
+    </div>
+
+    <h2>rem - root em</h2>
+    <div style="font-size: 0.5rem">FSD-WE-T-B7</div>
+    <div style="font-size: 24px">
+      <div style="font-size: 0.5rem">FSD-WE-T-B7</div>
+    </div>
+  </body>
+</html>

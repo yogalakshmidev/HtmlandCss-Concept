@@ -1,0 +1,103 @@
+Topics:
+
+  measurements / Units:
+
+    Absolute Unit:
+      px - pixel, pt - point, pc - picas
+
+      1px = 1/96th of an inch
+
+      1pt = point 1/72th of an inch
+
+      1pc = picas,  12 * 1pt or 1/6th of inch
+
+    Relative Units:
+      %, vh, vw, 
+      1% -> 1 percent of the parent's property value
+
+      vw -> viewport width
+        1vw -> 1 % viewport width
+      vh -> viewport height
+        1vh -> 1 % viewport height
+      
+      emphemeral units (font-size) default font-size ----> 16px
+        em, rem ---> root em
+          1rem = fontsize of the root element ( Initial Containing Block )
+          1em = fontsize of the parent element
+
+          2rem = 2 * fontsize of the root element ( Initial Containing Block )
+          2em = 2 * fontsize of the parent element
+
+  functions in CSS:
+    calc - calc(100% - 10px); 100% of width/height or any prop - 10px
+
+  Flex-Box:
+    display: flex;
+      it takes over the control of the children's (width & height) & behavior
+    
+    flex-wrap:
+      wrap -> wrappes the children horizontally when a width reduces less than child width
+      nowrap -> shrinks the width of the children to accommodate inside parent
+
+    direction -> row: children placed in single row
+
+      justify-content moves content horizontally
+      align-content moves content vertically
+      Values:
+        start
+        center
+        end
+        space-evenly
+        space-around
+        space-between
+      
+      align-items moves content vertically
+        start
+        center
+        end
+
+    direction -> column: children placed in single column
+      justify-content moves content vertically
+      align-content moves content horizontally
+        start
+        center
+        end
+        space-evenly
+        space-around
+        space-between
+      
+      align-items moves content horizontally
+        start
+        center
+        end
+    
+    Children Props:
+      flex-shrink: 0/1; // shrink flag while there is no enough width
+      flex-grow: 0/1; // grow flag while there is some width left
+
+  How to center a div in the page
+
+  Layout Building:
+    Layout is the stucture of the website which may contain below elements,
+      1. Header
+      2. Sidebar ( May be either or both the sides )
+      3. Main content
+      4. Footer
+
+Task:
+  Create a simple Layout, the layout should have the following,
+    Header
+    Sidebar
+    Main Content
+    Footer
+
+  Please create a separate folder for each task on Your local system for Your reference.
+
+  Do & Keep it ready, next week will give instructions for submission
+
+Next Session:
+  RWD ( Responsive Web Design )
+    Make a website look good in all the devices ( all sizes )
+
+    Media Query:
+      Chaining the CSS values based on the sizes of screen ( width of the screen )

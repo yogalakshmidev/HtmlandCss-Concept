@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Values for all the elements in the form</title>
+  </head>
+  <body>
+    
+    <form>
+      <label for="textbox">Textbox :</label>
+      <input type="text" for="textbox" value="Yoga" name="name" /><br /><br />
+      <label for="btn">Button :</label>
+      <input type="button" id="btn" value="click me" name="btn"/><br /><br />
+      <label for="checkbox">Check box :</label>
+      <input type="checkbox" id="checkbox" name="hobby1"checked />Gardening
+      <input type="checkbox" checked name="hobby2" />Singing<br><br>
+      <label for="color">Color Attribute
+      <input type="color"  id="color" value="#ffacef" name="color"><br><br>
+      <label for="dob">DOB : </label>
+      <input type="date" id="dob" value="1992-10-15" name="dob"><br><br>
+      <label for="time">Time:</label>
+      <input type="datetime" id="time" value="01:43PM" name="time"><br><br>
+      <label for="loctime">Local Time:</label>
+      <input type="datetime-local" id="loctime" value="2024-09-18T14:43" name="loctime"  min="2024-09-18T00:00"
+      max="2024-09-24T00:00"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" value="yoga@gmail.com" name="email"><br><br>
+      <label for="file">Upload File here (png /jpeg):</label>
+      <input type="file" id="file" name="upload file " accept="image/png,image/jpeg"><br><br>
+      <!-- hidden is using a hidden input to remember the ID of the record being edited -->
+      <input type="hidden" id="hidden" name="filehiddenCheck" value="1234"><br><br></bt>
+      <input type="image" width="100" height="100" alt="sample image" src="/cssExamples/images/shoe.jpeg"><br><br>
+      <label for="favmonth">Favourite Month :</label>
+      <input type="month" id="favmonth" name="favmonth" value="1992-10"><br><br>
+      <label for="favnumber">Favourite Number :</label>
+      <input type="number" id="favnumber" placeholder="Favourite Number "name="num" ><br><br>
+      <label for="acc-pwd">ATM PIN</label>
+      <input type="password" id="acc-pwd" name="acc-pwd" value="123456789"><br><br>
+      <label for="leave">Leave for :</label>
+      <input type="radio" id="leave" name="leave" checked>Today
+      <input type="radio" id="leave" name="leave" checked>Tomorrow<br><br>
+      <label for="percentge">Overall Percentage in BE :</label>
+      <input type="range" id="percentge" name="percentge" list="highpercent"><br><br>
+      <datalist id="highpercent">
+        <option value="25">Poor</option>
+        <option value="50">Average</option>
+        <option value="75">Average</option>
+        <option value="85">Average</option>
+        <option value="100">Average</option>
+      </datalist><br>
+      <label for="site-search">Search : </label>
+      <input type="search" id="site-search" name="q"/>
+      <button>Search</button><br><br>
+      <label for="phoneno">Phone Number:</label>
+      <input type="tel" id="phoneno" name="phoneno" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="10" required><br><br>
+      <input type="time" id="time" name="time" min="08:00" max="18:00" required><br><br>
+       <label for="url">Enter your website URL:</label>
+      <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required /><br><br>
+      <label for="week">Choose the week for Trip</label>
+      <input type="week" name="week" id="week" min="2024-W10" max="2024-W24"><br><br>
+      <input type="reset"><br><br>
+      <input type="submit" value="submit">
+    </form>
+
+    <p><mark>"HTML & CSS is awesome"</mark>
+    </p>
+  </body>
+</html>

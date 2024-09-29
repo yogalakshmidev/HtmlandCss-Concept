@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .parent {
+        height: 100vh;
+        display: flex;
+        /* justify-content: center;
+        align-content: center; */
+        place-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .child {
+        border: 1px solid;
+        height: 100px;
+        width: 100px;
+      }
+      .x-axis {
+        position: absolute;
+        height: 10px;
+        width: 100%;
+        top: calc(50% - 5px);
+        left: 0px;
+        background-color: red;
+      }
+      .y-axis {
+        height: 100vh;
+        width: 10px;
+        left: calc(50% - 5px);
+        top: 0px;
+        background-color: blue;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child" style="flex-shrink: 0"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child" style="flex-grow: 1"></div>
+    </div>
+    <!-- <div class="x-axis"></div>
+    <div class="y-axis"></div> -->
+  </body>
+</html>
